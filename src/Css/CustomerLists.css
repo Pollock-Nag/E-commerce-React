@@ -1,0 +1,13 @@
+.header {
+    padding-top: 1%;
+    text-align: center;
+    background-color: #5395ca;
+    color: aliceblue;
+}
+
+.paymentStatus {
+    text-align: right;
+    padding-top: 5%;
+    padding-right: 25%;
+
+}
