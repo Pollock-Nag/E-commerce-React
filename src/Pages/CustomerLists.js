@@ -4,15 +4,7 @@ import Cards from '../Components/Cards';
 import '../Css/CustomerLists.css'
 import { customer_info } from "../Data/CustomerInfo"
 
-console.log(customer_info)
-function showcards(element) {
-    return (
-        <Cards
-            info={element}
-        />
 
-    );
-}
 const CustomerLists = () => {
     return (
         <div >
@@ -29,7 +21,11 @@ const CustomerLists = () => {
             </div>
             <br></br>
             <div className='body'>
-                {customer_info.map(showcards)}
+                {customer_info.map(function showcards(element) {
+                    return (
+                        <Cards info={element} />
+                    );
+                })}
             </div>
 
 

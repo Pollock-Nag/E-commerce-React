@@ -1,0 +1,23 @@
+#paymentOverviewLeft {
+    background-color: #FF6A00;
+}
+
+#paymentOverviewRight {
+    background-color: #00b600;
+}
+
+.payment {
+    display: flex;
+    padding: 1%;
+}
+
+.paymentText {
+    margin-right: 435px;
+    font-size: x-large;
+}
+
+.Text {
+    font-size: x-large;
+    padding-left: 1%;
+    padding-top: 1%;
+}

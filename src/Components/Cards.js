@@ -28,7 +28,10 @@ const Cards = (props) => {
                         </MDBCardText>
                         <MDBCardText>
                             <div>{props.info.quantity}</div>
-                            <div>{props.info.price}</div>
+                            <div className='priceColor'>{props.info.price}</div>
+                        </MDBCardText>
+                        <MDBCardText>
+                            <div>{props.info.date_time}</div>
                         </MDBCardText>
 
 
@@ -38,12 +41,16 @@ const Cards = (props) => {
                 <MDBCol md='3'>
                     <div className='paymentStatus'>
                         <div>{props.info.time}</div>
+                        <div className='priceColor'>{props.info.payment_price}</div>
                         <br></br>
+                        <div>{props.info.order_payment_status}</div>
                         <div>{props.info.payment_status}</div>
-                        <br></br>
 
                     </div>
+
+
                 </MDBCol>
+
 
 
             </MDBRow>

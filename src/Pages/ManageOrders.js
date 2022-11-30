@@ -4,21 +4,10 @@ import Cards from '../Components/Cards';
 import { MDBCol } from 'mdb-react-ui-kit';
 import '../Css/CustomerLists.css'
 import Button from 'react-bootstrap/Button';
+import { order_info } from "../Data/OrderInfo"
 
-const customer_info = {
-    name: "Pollock Nag",
-    no_of_orders: 100
-}
-const order_info = {
-    image: "https://5.imimg.com/data5/QV/MN/GO/SELLER-48652903/250ml-coca-cola-500x500.jpg",
-    order_id: "Order #" + 1001,
-    quantity: 2 + " ITEMS",
-    price: 10200 + " INR",
-    time: "Today " + "11:11 AM",
-    payment_status: "paid",
-    delivary_status: "pending"
-}
 
+console.log()
 
 const ManageOrders = () => {
     return (
@@ -52,9 +41,14 @@ const ManageOrders = () => {
                 </div>
             </div>
             <div className='body'>
-                <Cards
-                    info={order_info}
-                />
+                {order_info.map(function (elem) {
+                    return (
+                        <Cards
+                            info={elem}
+                        />
+                    )
+                })}
+
             </div>
         </div>
     )
