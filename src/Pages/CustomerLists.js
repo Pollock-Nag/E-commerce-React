@@ -3,12 +3,12 @@ import SearchBar from '../Components/SearchBar'
 import Cards from '../Components/Cards';
 import '../Css/CustomerLists.css'
 import { customer_info } from "../Data/CustomerInfo"
-
+import NavigationBar from '../Components/NavigationBar';
 
 const CustomerLists = () => {
     return (
         <div >
-
+            <NavigationBar />
             <div className='header'>
                 <h3>My Customers</h3>
                 <br></br>

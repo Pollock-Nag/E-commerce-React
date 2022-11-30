@@ -5,13 +5,14 @@ import { MDBCol } from 'mdb-react-ui-kit';
 import '../Css/CustomerLists.css'
 import Button from 'react-bootstrap/Button';
 import { order_info } from "../Data/OrderInfo"
-
+import NavigationBar from '../Components/NavigationBar';
 
 console.log()
 
 const ManageOrders = () => {
     return (
         <div>
+            <NavigationBar />
             <div className='header'>
                 <h3>Manage Orders</h3>
                 <br></br>

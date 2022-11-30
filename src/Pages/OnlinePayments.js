@@ -7,16 +7,12 @@ import DropDown from '../Components/DropDown'
 import PaymentOverview from '../Components/PaymentOverview'
 import Cards from '../Components/Cards'
 import { payment_info } from '../Data/PaymentData'
-/*const payment_info = {
-    image: "https://5.imimg.com/data5/QV/MN/GO/SELLER-48652903/250ml-coca-cola-500x500.jpg",
-    order_id: "Order #" + 1001,
-    date_time: "30/10/2019, 02:45 PM",
-    payment_price: 512 + " INR",
-    payment_status: "Received"
-}*/
+import NavigationBar from '../Components/NavigationBar';
+
 const OnlinePayments = () => {
     return (
         <div>
+            <NavigationBar />
             <div className='header'>
                 <h3>Online Payments</h3>
                 <br></br>
